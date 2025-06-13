@@ -7,7 +7,7 @@ const Blogs = ()=> {
     const {loading, posts} = useContext(AppContext);
     
     return (
-        <div>
+        <div className="w-5/12 mx-auto">
             {
                 loading ? (<Spinner/>) : 
                 (

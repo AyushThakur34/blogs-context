@@ -12,7 +12,7 @@ import { useContext, useEffect } from "react";
     }, []);
 
     return (
-      <div>
+      <div className="w-screen h-screen relative overflow-x-auto">
         <Header/>
         <Blogs/>
         <Pagination/>

@@ -1,7 +1,7 @@
 const Header = ()=> {
     return (
-        <div>
-            <header className="text-center uppercase font-bold text-3xl shadow-2xl p-1">
+        <div className="mb-2">
+            <header className="text-center uppercase font-bold text-3xl shadow-xl p-1">
                 Blogs
             </header>
         </div>
