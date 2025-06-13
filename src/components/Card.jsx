@@ -13,7 +13,7 @@ const Card = (props)=> {
 
             <p>{post.content}</p>
             <p className="underline text-sm text-blue-500 my-1">{post.tags.map((tag, index)=>{
-                return <span key={index} className="mr-3">{`#${tag}`}</span>
+                return <span key={index} className="mr-3 cursor-pointer">{`#${tag}`}</span>
             })}</p>
         </div>
     )
