@@ -1,7 +1,7 @@
 import { AppContext } from "./context/AppContext";
 import { useContext, useEffect } from "react";
 import { Route, Routes, useLoaderData, useLocation, useSearchParams } from "react-router-dom";
-import TagPage from "./components/TagePage";
+import TagPage from "./components/TagPage";
 import CategoryPage from "./components/CategoryPage";
 import PageNotFound from "./components/PageNotFound";
 import Home from "./components/Home";

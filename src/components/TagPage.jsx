@@ -1,20 +1,23 @@
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 import { useLocation, useNavigation } from "react-router-dom";
 import Header from "./Header";
-import Blogs from "./Blogs";
 import Pagination from "./Pagination";
+import Blogs from "./Blogs";
 
-const CategoryPage = ()=> {
+const TagPage = ()=> {
+    const {loading} = useContext(AppContext);
     const navigation = useNavigation();
     const location = useLocation();
-    const category = location.pathname.split("/").at(-1);
+    let tag = location.pathname.split("/").at(-1);
 
     return (
-        <div>   
+        <div>
             <Header/>
 
             <div>
                 <button onClick={()=>navigation(-1)}>Back</button>
-                <h2>Blogs on <span>{category}</span></h2>
+                <h2>Blogs Tagged <span>#{tag}</span></h2>
             </div>
 
             <Blogs/>
@@ -23,4 +26,4 @@ const CategoryPage = ()=> {
     )
 }
 
-export default CategoryPage;
+export default TagPage;

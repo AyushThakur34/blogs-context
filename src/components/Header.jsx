@@ -1,7 +1,3 @@
-import { Outlet } from "react-router-dom";
-import Blogs from "./Blogs";
-import Pagination from "./Pagination";
-
 const Header = ()=> {
     return (
         <div className="mb-2">
