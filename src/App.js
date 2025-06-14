@@ -34,7 +34,7 @@ import BlogPage from "./components/BlogPage";
             <Route index element={<Home/>}/>
             <Route path="blogs/:blogId" element={<BlogPage/>}/>
             <Route path="tags/:tagId" element={<TagPage/>}/>
-            <Route path="category/:categoryId" element={<CategoryPage/>}/>
+            <Route path="categories/:categoryId" element={<CategoryPage/>}/>
             <Route path="*" element={<PageNotFound/>}/>
           </Route>
         </Routes>
