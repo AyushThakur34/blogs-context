@@ -39,7 +39,7 @@ const AppContextProvider = ({children})=> {
 
     const handlePageChange = (page)=> {
         setPage(page);
-        fetchBlog(page);
+        
     }
 
     const value = {

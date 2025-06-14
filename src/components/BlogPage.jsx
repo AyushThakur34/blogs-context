@@ -1,5 +1,5 @@
 import Header from "./Header";
-import { useLocation, useNavigation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../context/AppContext";
 import { BaseUrl } from "../BaseUrl";
@@ -7,7 +7,7 @@ import Spinner from "./Spinner";
 import Card from "./Card";
 
 const BlogPage = ()=> {
-    const navigation = useNavigation();
+    const navigation = useNavigate();
     const location = useLocation();
 
     const {loading, setLoading} = useContext(AppContext);
