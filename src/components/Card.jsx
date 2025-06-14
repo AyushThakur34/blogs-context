@@ -2,7 +2,6 @@ const Card = (props)=> {
     let post = props.post;
     return (
         <div className="my-4">
-
             <p className="font-bold text">{post.title}</p>
             <div className="my-2">
                 <p className="text-sm">
